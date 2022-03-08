@@ -40,5 +40,20 @@ https://console.developers.google.com/
 6. download json
 7. open oauth2-google and set $clientId and $clientSecret from the json or the google api page.
 8. set the $redirectUri for server retrieving the token, eg http://localhost/phpmailer/get_oauth_token.php
+9. Adust path to autoload.php according to where it is intsalled and update methods from the oauth2-client.thephpleague.com example
 
+```
+require '../vendor/autoload.php';
 
+$authUrl = $provider->getAuthorizationUrl($options);
+$_SESSION['oauth2state'] = $provider->Getstate();
+
+ echo $token->getToken() . '<br><br>';
+
+// Use this to get a new access token if the old one expires
+echo $token->getRefreshToken() . '<br><br>';
+
+// Unix timestamp at which the access token expires
+echo $token->getExpires() . '<br>';
+
+```
