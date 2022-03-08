@@ -57,3 +57,5 @@ echo $token->getRefreshToken() . '<br><br>';
 echo $token->getExpires() . '<br>';
 
 ```
+
+The script should now run and put the client id, secret and token printed from the script in the file copied from examples/gmail_xoauth.phps
