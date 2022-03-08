@@ -14,10 +14,14 @@ https://artisansweb.net/how-to-send-email-using-gmail-api-with-phpmailer/
 
 http://localhost/tbas2_3/ext/PHPMailer/get_oauth_token.php
 
-## Login here to configure. To edit search gmail api
+## Login here to configure.
+
+To edit search gmail api
 
 https://console.cloud.google.com/cloud-resource-manager
 
+This is the oauth library.
+Use this to update outdated code in get_oauth_token.php
 
 https://oauth2-client.thephpleague.com/providers/league/
 
